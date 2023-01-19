@@ -42,7 +42,7 @@ const Home = () => {
 	  <div className="bg-success w-75">
       <ul className="list-group list-group-flush">
         {list.map((t, index) => (
-          <li className="list-group-item list-group-item-action d-flex justify-content-between" key={index}>
+          <li id="lista" className="list-group-item list-group-item-action d-flex justify-content-between" key={index}>
             {t}
             <button className="btn btn-danger" onClick={() => deleteTask(index)}>x</button>
           </li>
